@@ -1,0 +1,54 @@
+{
+ "company": "Acme Facilities",
+ "context": "Renewal discussion for the Denver campus chiller plant.",
+ "time": "Thu Oct 1, 2:00 pm MT",
+ "duration": "30 min",
+ "format": "Virtual - Teams",
+ "owner": "Dana Reyes",
+ "stage": "Proposal",
+ "last_contact": "Sep 24 email from Priya Nair",
+ "attendees": [
+  {
+   "name": "Priya Nair",
+   "title": "Facilities Director",
+   "company": "Acme Facilities",
+   "body": "Signs the renewal and raised the pricing concern on Sep 24.",
+   "first_time": false
+  }
+ ],
+ "absent_decision_maker": "",
+ "what_you_need_to_know": [
+  {
+   "body": "Priya rejected the 3-year price on Sep 24.",
+   "source": "Email, Sep 24"
+  }
+ ],
+ "objective": "Agree a revised 3-year price and a signing date.",
+ "desired_outcome": "Signed renewal by Oct 15.",
+ "questions": [
+  "What number makes the 3-year term work for Acme's budget cycle?",
+  "Who else must approve before Oct 15?",
+  "Which chiller is the biggest outage risk this winter?",
+  "Is the Oct 15 date tied to a budget freeze?"
+ ],
+ "risks": [
+  {
+   "body": "A competitor quote may already be on Priya's desk.",
+   "source": "Email, Sep 24"
+  }
+ ],
+ "actions": [
+  {
+   "owner": "Dana Reyes",
+   "body": "Send the revised quote before the call",
+   "by_when": "today 1:30 pm",
+   "status": "Open"
+  }
+ ],
+ "sources": [
+  {
+   "label": "Email - Priya Nair, Sep 24"
+  }
+ ],
+ "classification_note": ""
+}

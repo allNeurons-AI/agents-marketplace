@@ -1,0 +1,495 @@
+{
+ "title": "Competitive Intelligence Report (illustrative sample, fictional competitors)",
+ "week": "Sep 28 - Oct 4, 2026",
+ "company": "Meridian Legal AI",
+ "group": [
+  {
+   "name": "Meridian Legal AI",
+   "domain": "meridianlegal.example",
+   "description": "AI contract review for in-house legal teams."
+  },
+  {
+   "name": "Meridian Workflow",
+   "domain": "meridianworkflow.example",
+   "description": "Sister company: contract lifecycle and approvals platform, same parent."
+  },
+  {
+   "name": "Meridian Voice",
+   "domain": "meridianvoice.example",
+   "description": "Parent company; sells conversational voice AI and voice analytics."
+  }
+ ],
+ "sets": [
+  {
+   "key": "A",
+   "name": "AI contract review tools",
+   "entity": "Meridian Legal AI",
+   "competitors": [
+    {
+     "name": "Clausewell",
+     "description": "Vendor in this segment: Clausewell sells contract and legal AI products to mid-market buyers."
+    },
+    {
+     "name": "Draftly",
+     "description": "Vendor in this segment: Draftly sells contract and legal AI products to mid-market buyers."
+    },
+    {
+     "name": "Legistify",
+     "description": "Vendor in this segment: Legistify sells contract and legal AI products to mid-market buyers."
+    },
+    {
+     "name": "Vendor Alpha",
+     "description": "Vendor in this segment: Vendor Alpha sells contract and legal AI products to mid-market buyers."
+    },
+    {
+     "name": "Evisort",
+     "description": "Vendor in this segment: Evisort sells contract and legal AI products to mid-market buyers."
+    },
+    {
+     "name": "Leah",
+     "description": "Vendor in this segment: Leah sells contract and legal AI products to mid-market buyers."
+    },
+    {
+     "name": "LinkSquares",
+     "description": "Vendor in this segment: LinkSquares sells contract and legal AI products to mid-market buyers."
+    },
+    {
+     "name": "Vendor Beta",
+     "description": "Vendor in this segment: Vendor Beta sells contract and legal AI products to mid-market buyers."
+    },
+    {
+     "name": "Vendor Gamma",
+     "description": "Vendor in this segment: Vendor Gamma sells contract and legal AI products to mid-market buyers."
+    }
+   ]
+  },
+  {
+   "key": "B",
+   "name": "Contract lifecycle platforms",
+   "entity": "Meridian Workflow",
+   "competitors": [
+    {
+     "name": "Northgate CLM",
+     "description": "Vendor in this segment: Northgate CLM sells contract and legal AI products to mid-market buyers."
+    },
+    {
+     "name": "Vendor Delta",
+     "description": "Vendor in this segment: Vendor Delta sells contract and legal AI products to mid-market buyers."
+    },
+    {
+     "name": "Vendor Epsilon",
+     "description": "Vendor in this segment: Vendor Epsilon sells contract and legal AI products to mid-market buyers."
+    },
+    {
+     "name": "Litera",
+     "description": "Vendor in this segment: Litera sells contract and legal AI products to mid-market buyers."
+    },
+    {
+     "name": "Google Gemini for Legal",
+     "description": "Vendor in this segment: Google Gemini for Legal sells contract and legal AI products to mid-market buyers."
+    }
+   ]
+  },
+  {
+   "key": "C",
+   "name": "Voice analytics",
+   "entity": "Meridian Voice",
+   "competitors": [
+    {
+     "name": "Observe.AI",
+     "description": "Vendor in this segment: Observe.AI sells contract and legal AI products to mid-market buyers."
+    },
+    {
+     "name": "CallMiner",
+     "description": "Vendor in this segment: CallMiner sells contract and legal AI products to mid-market buyers."
+    },
+    {
+     "name": "Gong",
+     "description": "Vendor in this segment: Gong sells contract and legal AI products to mid-market buyers."
+    }
+   ]
+  }
+ ],
+ "executive_summary": [
+  "Bottom line: Clausewell and Northgate CLM both moved toward the same buyer this week, the in-house legal team that wants review, approval and renewal reminders in one place. That is the space our playbook product sells into, so expect more overlap in deals from Q4."
+ ],
+ "company_summaries": [
+  {
+   "entity": "Meridian Legal AI",
+   "what_matters": "Clausewell released Playbook Check on Sep 30, which compares a contract with a company's approved clauses inside Word at no extra cost. It does the same job as our playbook feature.",
+   "why": "Buyers comparing the two will ask why they should pay extra for ours, so we need our own accuracy numbers and a clear answer on what happens after a clause is flagged.",
+   "title": "Playbook review moves into Word"
+  },
+  {
+   "entity": "Meridian Workflow",
+   "what_matters": "Clausewell released Playbook Check on Sep 30, which compares a contract with a company's approved clauses inside Word at no extra cost. It does the same job as our playbook feature.",
+   "why": "Buyers comparing the two will ask why they should pay extra for ours, so we need our own accuracy numbers and a clear answer on what happens after a clause is flagged.",
+   "title": "Approvals and review bundled by Northgate"
+  },
+  {
+   "entity": "Meridian Voice",
+   "what_matters": "Clausewell released Playbook Check on Sep 30, which compares a contract with a company's approved clauses inside Word at no extra cost. It does the same job as our playbook feature.",
+   "why": "Buyers comparing the two will ask why they should pay extra for ours, so we need our own accuracy numbers and a clear answer on what happens after a clause is flagged.",
+   "title": "Workflow vendors add AI review"
+  }
+ ],
+ "updates": [
+  {
+   "set": "A",
+   "competitor": "Clausewell",
+   "what": "On Sep 30 Clausewell released Playbook Check, which compares an incoming contract with a company's approved clause library and marks every difference as acceptable, risky or missing. It runs inside Word, takes about a minute for a 20-page contract, and is included in the Team plan at no extra cost. The company says early users cut first-pass review time by about 40%, though that figure comes from its own announcement.",
+   "facts": [
+    "Released Sep 30, 2026; available to all Team and Enterprise customers",
+    "Included in the existing Team plan, so no price change",
+    "Works only inside Word; no web or Outlook version mentioned yet",
+    "40% faster first-pass review is the vendor's own claim, not independently checked"
+   ],
+   "why": "This is the same job our playbook feature does, and Clausewell now gives it away inside a plan customers already pay for. Buyers comparing the two will ask why they should pay extra for ours, so we need a clear answer on accuracy and on what happens after the flag.",
+   "response": "Run our playbook check on the same 10 sample contracts and compare accuracy and speed, then prepare a one-page comparison for the sales team.",
+   "sources": [
+    1
+   ]
+  },
+  {
+   "set": "A",
+   "competitor": "Draftly",
+   "quiet": true
+  },
+  {
+   "set": "A",
+   "competitor": "Legistify",
+   "quiet": true
+  },
+  {
+   "set": "A",
+   "competitor": "Vendor Alpha",
+   "quiet": true
+  },
+  {
+   "set": "A",
+   "competitor": "Evisort",
+   "quiet": true
+  },
+  {
+   "set": "A",
+   "competitor": "Leah",
+   "quiet": true
+  },
+  {
+   "set": "A",
+   "competitor": "LinkSquares",
+   "quiet": true
+  },
+  {
+   "set": "A",
+   "competitor": "Vendor Beta",
+   "quiet": true
+  },
+  {
+   "set": "A",
+   "competitor": "Vendor Gamma",
+   "quiet": true
+  },
+  {
+   "set": "B",
+   "competitor": "Northgate CLM",
+   "what": "On Sep 30 Clausewell released Playbook Check, which compares an incoming contract with a company's approved clause library and marks every difference as acceptable, risky or missing. It runs inside Word, takes about a minute for a 20-page contract, and is included in the Team plan at no extra cost. The company says early users cut first-pass review time by about 40%, though that figure comes from its own announcement.",
+   "facts": [
+    "Released Sep 30, 2026; available to all Team and Enterprise customers",
+    "Included in the existing Team plan, so no price change",
+    "Works only inside Word; no web or Outlook version mentioned yet",
+    "40% faster first-pass review is the vendor's own claim, not independently checked"
+   ],
+   "why": "This is the same job our playbook feature does, and Clausewell now gives it away inside a plan customers already pay for. Buyers comparing the two will ask why they should pay extra for ours, so we need a clear answer on accuracy and on what happens after the flag.",
+   "response": "Run our playbook check on the same 10 sample contracts and compare accuracy and speed, then prepare a one-page comparison for the sales team.",
+   "sources": [
+    1
+   ]
+  },
+  {
+   "set": "B",
+   "competitor": "Vendor Delta",
+   "quiet": true
+  },
+  {
+   "set": "B",
+   "competitor": "Vendor Epsilon",
+   "quiet": true
+  },
+  {
+   "set": "B",
+   "competitor": "Litera",
+   "quiet": true
+  },
+  {
+   "set": "B",
+   "competitor": "Google Gemini for Legal",
+   "quiet": true
+  },
+  {
+   "set": "C",
+   "competitor": "Observe.AI",
+   "what": "On Sep 30 Clausewell released Playbook Check, which compares an incoming contract with a company's approved clause library and marks every difference as acceptable, risky or missing. It runs inside Word, takes about a minute for a 20-page contract, and is included in the Team plan at no extra cost. The company says early users cut first-pass review time by about 40%, though that figure comes from its own announcement.",
+   "facts": [
+    "Released Sep 30, 2026; available to all Team and Enterprise customers",
+    "Included in the existing Team plan, so no price change",
+    "Works only inside Word; no web or Outlook version mentioned yet",
+    "40% faster first-pass review is the vendor's own claim, not independently checked"
+   ],
+   "why": "This is the same job our playbook feature does, and Clausewell now gives it away inside a plan customers already pay for. Buyers comparing the two will ask why they should pay extra for ours, so we need a clear answer on accuracy and on what happens after the flag.",
+   "response": "Run our playbook check on the same 10 sample contracts and compare accuracy and speed, then prepare a one-page comparison for the sales team.",
+   "sources": [
+    1
+   ]
+  },
+  {
+   "set": "C",
+   "competitor": "CallMiner",
+   "quiet": true
+  },
+  {
+   "set": "C",
+   "competitor": "Gong",
+   "quiet": true
+  }
+ ],
+ "new_entrants": [
+  {
+   "entity": "Meridian Legal AI",
+   "name": "Pactline",
+   "note": "Seed-stage startup that appeared in two searches this week. It says it reviews contracts by reading them against a customer's past negotiated deals. No customers or pricing are public yet, so there is nothing to act on, but check again in a month.",
+   "source": 3
+  },
+  {
+   "entity": "Meridian Workflow",
+   "name": "Pactline",
+   "note": "Seed-stage startup that appeared in two searches this week. It says it reviews contracts by reading them against a customer's past negotiated deals. No customers or pricing are public yet, so there is nothing to act on, but check again in a month.",
+   "source": 3
+  },
+  {
+   "entity": "Meridian Voice",
+   "name": "Pactline",
+   "note": "Seed-stage startup that appeared in two searches this week. It says it reviews contracts by reading them against a customer's past negotiated deals. No customers or pricing are public yet, so there is nothing to act on, but check again in a month.",
+   "source": 3
+  }
+ ],
+ "working_well": [
+  {
+   "entity": "Meridian Legal AI",
+   "title": "Review features that live inside the tool people already use",
+   "body": "Clausewell inside Word and Northgate inside the approval screen both avoid asking people to open a new product. Both announcements lead with 'no new tool to learn', and Clausewell's customer quotes repeat it. The pattern suggests adoption, not features, is what these vendors are competing on.",
+   "source": 1
+  },
+  {
+   "entity": "Meridian Workflow",
+   "title": "Naming a concrete time saving",
+   "body": "Northgate's regional bank story gives one number a buyer can repeat to a boss: 5 days down to 2. Clausewell gives 40%. Both are easier to sell than general claims about 'efficiency'. We do not yet publish a comparable number.",
+   "source": 2
+  },
+  {
+   "entity": "Meridian Voice",
+   "title": "Review features that live inside the tool people already use",
+   "body": "Clausewell inside Word and Northgate inside the approval screen both avoid asking people to open a new product. Both announcements lead with 'no new tool to learn', and Clausewell's customer quotes repeat it. The pattern suggests adoption, not features, is what these vendors are competing on.",
+   "source": 1
+  },
+  {
+   "entity": "Meridian Legal AI",
+   "title": "Naming a concrete time saving",
+   "body": "Northgate's regional bank story gives one number a buyer can repeat to a boss: 5 days down to 2. Clausewell gives 40%. Both are easier to sell than general claims about 'efficiency'. We do not yet publish a comparable number.",
+   "source": 2
+  }
+ ],
+ "market_trends": [
+  {
+   "entity": "Meridian Legal AI",
+   "title": "Review is becoming a standard feature, not a product",
+   "body": "Two vendors in two different categories added contract review this week and neither charged extra for it. When a feature is bundled into existing plans, customers stop expecting to pay separately for it, so our pricing needs to be about the outcome (fewer risky contracts signed) rather than the review step itself."
+  },
+  {
+   "entity": "Meridian Workflow",
+   "title": "Price pressure is starting in the platform category",
+   "body": "Northgate's 15% cut is the first price move we have seen from a lifecycle platform this year. If other platforms follow, customers will compare our per-user price with theirs even though the products differ, so we should be ready with a simple explanation of what ours includes."
+  },
+  {
+   "entity": "Meridian Voice",
+   "title": "Review is becoming a standard feature, not a product",
+   "body": "Two vendors in two different categories added contract review this week and neither charged extra for it. When a feature is bundled into existing plans, customers stop expecting to pay separately for it, so our pricing needs to be about the outcome (fewer risky contracts signed) rather than the review step itself."
+  },
+  {
+   "entity": "Meridian Legal AI",
+   "title": "Price pressure is starting in the platform category",
+   "body": "Northgate's 15% cut is the first price move we have seen from a lifecycle platform this year. If other platforms follow, customers will compare our per-user price with theirs even though the products differ, so we should be ready with a simple explanation of what ours includes."
+  }
+ ],
+ "threats": [
+  {
+   "set": "A",
+   "title": "Northgate bundles review and approvals at a lower price",
+   "level": "High",
+   "why": "A customer who already needs approvals can now get review in the same product for 15% less than before, so the case for adding a separate review tool gets weaker.",
+   "impact": "Longer sales cycles and more discount requests in deals that include an existing Northgate user."
+  },
+  {
+   "set": "B",
+   "title": "Clausewell's Playbook Check matches our headline feature",
+   "level": "Medium",
+   "why": "It does the same comparison against approved clauses, runs inside Word and costs nothing extra, though it is too new to know how accurate it is.",
+   "impact": "Buyers may stop treating playbook checking as something that deserves its own budget line."
+  },
+  {
+   "set": "C",
+   "title": "Northgate bundles review and approvals at a lower price",
+   "level": "High",
+   "why": "A customer who already needs approvals can now get review in the same product for 15% less than before, so the case for adding a separate review tool gets weaker.",
+   "impact": "Longer sales cycles and more discount requests in deals that include an existing Northgate user."
+  },
+  {
+   "set": "A",
+   "title": "Clausewell's Playbook Check matches our headline feature",
+   "level": "Medium",
+   "why": "It does the same comparison against approved clauses, runs inside Word and costs nothing extra, though it is too new to know how accurate it is.",
+   "impact": "Buyers may stop treating playbook checking as something that deserves its own budget line."
+  },
+  {
+   "set": "B",
+   "title": "Northgate bundles review and approvals at a lower price",
+   "level": "High",
+   "why": "A customer who already needs approvals can now get review in the same product for 15% less than before, so the case for adding a separate review tool gets weaker.",
+   "impact": "Longer sales cycles and more discount requests in deals that include an existing Northgate user."
+  }
+ ],
+ "opportunities": [
+  {
+   "set": "A",
+   "title": "Show accuracy on real contracts",
+   "body": "Clausewell has published a speed claim but no accuracy numbers. A short, honest comparison of how often each tool catches a genuinely risky clause would give buyers a reason to look beyond price. We can run it on a neutral sample and publish the method."
+  },
+  {
+   "set": "B",
+   "title": "Position as the review layer that works with any platform",
+   "body": "Not every customer will move to Northgate, and many use a different system for storage and approvals. We can offer to sit on top of whichever platform they have, which Northgate cannot say."
+  },
+  {
+   "set": "C",
+   "title": "Show accuracy on real contracts",
+   "body": "Clausewell has published a speed claim but no accuracy numbers. A short, honest comparison of how often each tool catches a genuinely risky clause would give buyers a reason to look beyond price. We can run it on a neutral sample and publish the method."
+  },
+  {
+   "set": "A",
+   "title": "Position as the review layer that works with any platform",
+   "body": "Not every customer will move to Northgate, and many use a different system for storage and approvals. We can offer to sit on top of whichever platform they have, which Northgate cannot say."
+  }
+ ],
+ "actions": [
+  {
+   "action": "Run a head-to-head accuracy test against Clausewell's Playbook Check",
+   "reason": "We need our own numbers before sales is asked about it, and the vendor has not published any accuracy data.",
+   "priority": "High",
+   "owner": "Product",
+   "by_when": "Oct 16",
+   "entity": "Meridian Legal AI"
+  },
+  {
+   "action": "Brief the sales team on Northgate's new price and bundled review",
+   "reason": "Reps will meet this in live deals starting now and should know the three questions to ask the customer.",
+   "priority": "High",
+   "owner": "Sales enablement",
+   "by_when": "Oct 9",
+   "entity": "Meridian Workflow"
+  },
+  {
+   "action": "Draft a one-page comparison of how we price versus bundled review",
+   "reason": "It gives sales a plain answer when a buyer says review is free elsewhere.",
+   "priority": "Medium",
+   "owner": "Marketing",
+   "by_when": "Oct 23",
+   "entity": "Meridian Voice"
+  },
+  {
+   "action": "Re-check Pactline in four weeks",
+   "reason": "It is too early to judge, but a funded entrant targeting the same buyers is worth a second look.",
+   "priority": "Low",
+   "owner": "Competitive analyst",
+   "by_when": "Nov 2",
+   "entity": "Meridian Legal AI"
+  },
+  {
+   "action": "Run a head-to-head accuracy test against Clausewell's Playbook Check",
+   "reason": "We need our own numbers before sales is asked about it, and the vendor has not published any accuracy data.",
+   "priority": "High",
+   "owner": "Product",
+   "by_when": "Oct 16",
+   "entity": "Meridian Workflow"
+  },
+  {
+   "action": "Brief the sales team on Northgate's new price and bundled review",
+   "reason": "Reps will meet this in live deals starting now and should know the three questions to ask the customer.",
+   "priority": "High",
+   "owner": "Sales enablement",
+   "by_when": "Oct 9",
+   "entity": "Meridian Voice"
+  }
+ ],
+ "sources": [
+  {
+   "label": "Source 1",
+   "url": "https://example.com/1"
+  },
+  {
+   "label": "Source 2",
+   "url": "https://example.com/2"
+  },
+  {
+   "label": "Source 3",
+   "url": "https://example.com/3"
+  },
+  {
+   "label": "Source 4",
+   "url": "https://example.com/4"
+  },
+  {
+   "label": "Source 5",
+   "url": "https://example.com/5"
+  },
+  {
+   "label": "Source 6",
+   "url": "https://example.com/6"
+  },
+  {
+   "label": "Source 7",
+   "url": "https://example.com/7"
+  },
+  {
+   "label": "Source 8",
+   "url": "https://example.com/8"
+  },
+  {
+   "label": "Source 9",
+   "url": "https://example.com/9"
+  },
+  {
+   "label": "Source 10",
+   "url": "https://example.com/10"
+  },
+  {
+   "label": "Source 11",
+   "url": "https://example.com/11"
+  },
+  {
+   "label": "Source 12",
+   "url": "https://example.com/12"
+  },
+  {
+   "label": "Source 13",
+   "url": "https://example.com/13"
+  },
+  {
+   "label": "Source 14",
+   "url": "https://example.com/14"
+  },
+  {
+   "label": "Source 15",
+   "url": "https://example.com/15"
+  }
+ ]
+}

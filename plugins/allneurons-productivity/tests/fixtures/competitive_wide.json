@@ -1,0 +1,572 @@
+{
+ "title": "Competitive Intelligence Report (illustrative sample, fictional companies)",
+ "week": "Sep 30 - Oct 6, 2026",
+ "company": "Quillon",
+ "group": [
+  {
+   "name": "Quillon Agents",
+   "domain": "quillonagents.example",
+   "description": "Enterprise platform that helps companies roll out AI agents across teams and measure the ROI of that AI spend."
+  },
+  {
+   "name": "Quillon Legal",
+   "domain": "quillonlegal.example",
+   "description": "AI agents that review contracts, leases and certificates of insurance against a company's playbook."
+  },
+  {
+   "name": "Quillon",
+   "domain": "quillon.example",
+   "description": "Parent company (Quillon Group LLC); forward-deployed AI consulting and engineering for enterprise back offices."
+  },
+  {
+   "name": "Quillon Academy",
+   "domain": "quillonacademy.example",
+   "description": "Paid cohort courses on Courselane teaching PMs and engineers to build agentic AI with the Quillon model, with certification prep."
+  }
+ ],
+ "sets": [
+  {
+   "key": "A",
+   "entity": "Quillon Agents",
+   "name": "Enterprise AI agents and AI ROI platforms",
+   "competitors": [
+    {
+     "name": "Halden",
+     "description": "Customer-service AI agent platform priced per outcome; also touches Quillon's agent-building work."
+    },
+    {
+     "name": "Ava",
+     "description": "Universal \"AI employee\" platform for back-office work."
+    },
+    {
+     "name": "Fieldwise (Brightpath)",
+     "description": "Employee-support AI agents now part of Brightpath's AI platform and AI Control Tower."
+    },
+    {
+     "name": "FlowPath",
+     "description": "Automation vendor adding agents, coding agents and agent governance."
+    },
+    {
+     "name": "Ray AI",
+     "description": "Product-led back-office agent platform; also an alternative to Quillon's services."
+    },
+    {
+     "name": "Scribely",
+     "description": "Enterprise agent platform on its own Palmetto models, sold to marketing and revenue teams."
+    }
+   ]
+  },
+  {
+   "key": "B",
+   "entity": "Quillon Legal",
+   "name": "AI contract review and contract lifecycle management",
+   "competitors": [
+    {
+     "name": "Steelform",
+     "description": "Enterprise contract lifecycle platform with AI agents billed through usage credits."
+    },
+    {
+     "name": "Wordbook",
+     "description": "Word-based AI contract drafting and review, now adding autonomous contract management."
+    },
+    {
+     "name": "LinkGrid",
+     "description": "Mid-market contract lifecycle platform with agentic workflows."
+    },
+    {
+     "name": "Lumina",
+     "description": "Contract intelligence on its own legal language model, allied with LexiCore."
+    },
+    {
+     "name": "Workwell CLM (Evidra)",
+     "description": "Contract AI sold inside Workwell."
+    },
+    {
+     "name": "Lena (ClausePod)",
+     "description": "Agent platform for legal, procurement and finance work."
+    }
+   ]
+  },
+  {
+   "key": "C",
+   "entity": "Quillon",
+   "name": "Forward-deployed AI consulting and engineering",
+   "competitors": [
+    {
+     "name": "Corvane",
+     "description": "Largest AI services firm; Anthropic and Brightpath partner."
+    },
+    {
+     "name": "Palanti",
+     "description": "AIP platform delivered by forward-deployed engineers, moving into legal work."
+    },
+    {
+     "name": "Cognis",
+     "description": "Global integrator and the Quillon model Partner Network premier partner."
+    },
+    {
+     "name": "Slaten",
+     "description": "Mid-market consultancy and OpenAI Advanced Partner."
+    },
+    {
+     "name": "Persist Systems",
+     "description": "Engineering services firm acquiring Norrland."
+    },
+    {
+     "name": "Thoughtcraft",
+     "description": "Engineering consultancy with an agent-governance control plane."
+    }
+   ]
+  },
+  {
+   "key": "D",
+   "entity": "Quillon Academy",
+   "name": "Agentic AI and AI PM cohort training",
+   "competitors": [
+    {
+     "name": "Maker Lab",
+     "description": "Courselane cohort selling an AI forward-deployed engineer certification."
+    },
+    {
+     "name": "Interview Launch",
+     "description": "Forward-deployed AI engineering career program with the Quillon model modules."
+    },
+    {
+     "name": "Product Academy",
+     "description": "AI agents certification for product managers."
+    },
+    {
+     "name": "Reframe",
+     "description": "Membership-based product courses, now part of Boardly."
+    },
+    {
+     "name": "Anil Rao",
+     "description": "Creator-led AI PM cohort on Courselane at a lower price point."
+    },
+    {
+     "name": "Learnwell",
+     "description": "Low-cost and free AI courses and professional certificates."
+    }
+   ]
+  }
+ ],
+ "executive_summary": [
+  "Bottom line: the week's biggest moves were about controlling and measuring AI agents, not building them. Halden and Orbitco published an open standard for how agents log in to businesses, and Brightpath launched a tool that ties workflow changes to business KPIs, which is the job Quillon Agents sells."
+ ],
+ "company_summaries": [
+  {
+   "entity": "Quillon Agents",
+   "title": "Agent identity standards led by Halden",
+   "what_matters": "Halden and Orbitco announced the Open Agent Protocol on Oct 6 with Greenmart, Marketloft, Payrill and Kestrel Voice as partners; a v0.1 specification is due later in October,",
+   "why": "so agent identity is becoming a buying question in Quillon Agents deals."
+  },
+  {
+   "entity": "Quillon Agents",
+   "title": "Brightpath bundles AI ROI measurement",
+   "what_matters": "Brightpath made AI Workflow Factory generally available on Oct 6; it finds workflow improvements with process mining and measures them against KPIs such as case deflection,",
+   "why": "which overlaps with Quillon Agents' ROI story for any customer already on Brightpath."
+  },
+  {
+   "entity": "Quillon",
+   "title": "Corvane's 2,000-person AI value team",
+   "what_matters": "Corvane launched an Advanced Intelligence Group of more than 2,000 AI specialists on Oct 5, aimed at clients that have not turned AI pilots into lasting value,",
+   "why": "which is the same buyer Quillon's consulting work targets."
+  },
+  {
+   "entity": "Quillon Legal",
+   "title": "Legal tech consolidation",
+   "what_matters": "All six tracked Quillon Legal competitors were quiet; the legal market's news came from acquisitions and a $17m raise by the AI-native law firm Larkin Law,",
+   "why": "which shows the market consolidating around bundled suites and well-funded AI-native firms."
+  },
+  {
+   "entity": "Quillon Academy",
+   "title": "Low-cost certificates raise the baseline",
+   "what_matters": "All six tracked Quillon Academy course rivals were quiet except Learnwell, which keeps adding low-cost certificates on its own platform,",
+   "why": "which raises the price baseline learners compare paid cohorts against."
+  }
+ ],
+ "updates": [
+  {
+   "set": "A",
+   "competitor": "Halden",
+   "sources": [
+    1,
+    2
+   ],
+   "what": "On Oct 6, 2026 Halden and Orbitco announced the Open Agent Protocol, an open standard that lets a consumer's personal AI agent sign in to a business and be limited to the actions that business allows. It uses OpenAuth, the same login handshake behind 'Sign in with Searchly', and lets a business choose guest or signed-in access and whether the agent works through its website, its APIs or its own agent. Launch partners are Kestrel Voice, Tallow, Orbitco, Vantor, Marketloft, Payrill and Greenmart. A v0.1 specification is due later in October, and payments are left out of the first release.",
+   "facts": [
+    "Announced Oct 6, 2026, with Orbitco",
+    "Partners: Kestrel Voice, Tallow, Vantor, Marketloft, Payrill, Greenmart",
+    "v0.1 specification due later in October 2026",
+    "Payments excluded from the first release",
+    "Marketloft and Payrill also joined Ledgerline's competing Verified Agent Protocol"
+   ],
+   "why": "Halden is now setting the rules for how agents prove who they are and what they may do, not only selling agents. Enterprise buyers in Quillon Agents deals will start asking how we record which agent did what, and Quillon clients building customer-facing agents will ask whether to support this standard.",
+   "response": "Add agent identity and permission records to the Quillon Agents roadmap discussion and track the v0.1 specification when it ships."
+  },
+  {
+   "set": "A",
+   "competitor": "Ava",
+   "quiet": true
+  },
+  {
+   "set": "A",
+   "competitor": "Fieldwise (Brightpath)",
+   "sources": [
+    3
+   ],
+   "what": "On Oct 6, 2026, at its World Forum in Mumbai, Brightpath (which owns Fieldwise) made AI Workflow Factory generally available. The product combines process mining, which reads system logs to see how work really flows, with an autonomous engineering agent that builds the fix inside Brightpath. Each improvement is tied to a KPI the business already tracks; Brightpath's example is raising case deflection by 20% across several business units at once. Brightpath says it runs more than 100 billion workflows a year, and the Autonomous Engineer part is in early access on request.",
+   "facts": [
+    "Generally available Oct 6, 2026",
+    "Launched at World Forum Mumbai",
+    "Ties each change to an existing business KPI (example: +20% case deflection)",
+    "Autonomous Engineer in early access on request",
+    "Brightpath's own figure: 100 billion+ workflows a year"
+   ],
+   "why": "Measuring the business impact of AI changes is the core of Quillon Agents' pitch, and Brightpath now bundles a version of it for its own customers. In accounts that already run Brightpath, buyers will ask why they need a separate ROI layer.",
+   "response": "Write a one-page comparison showing Quillon Agents measures AI ROI across every vendor's tools, not only work done inside Brightpath."
+  },
+  {
+   "set": "A",
+   "competitor": "FlowPath",
+   "quiet": true
+  },
+  {
+   "set": "A",
+   "competitor": "Ray AI",
+   "quiet": true
+  },
+  {
+   "set": "A",
+   "competitor": "Scribely",
+   "quiet": true
+  },
+  {
+   "set": "B",
+   "competitor": "Steelform",
+   "quiet": true
+  },
+  {
+   "set": "B",
+   "competitor": "Wordbook",
+   "quiet": true
+  },
+  {
+   "set": "B",
+   "competitor": "LinkGrid",
+   "quiet": true
+  },
+  {
+   "set": "B",
+   "competitor": "Lumina",
+   "quiet": true
+  },
+  {
+   "set": "B",
+   "competitor": "Workwell CLM (Evidra)",
+   "quiet": true
+  },
+  {
+   "set": "B",
+   "competitor": "Lena (ClausePod)",
+   "quiet": true
+  },
+  {
+   "set": "C",
+   "competitor": "Corvane",
+   "sources": [
+    4
+   ],
+   "what": "On Oct 5, 2026 Corvane launched its Advanced Intelligence Group, a global network of more than 2,000 specialists in AI, data, industries and technology platforms, led by Chief AI and Data Officer Dr. Mara Quill. The group focuses on agentic AI, advanced data work, supply chain and engineering, and Datavault and Icefield platforms. Corvane names two client projects: AI demand forecasting at Medlink and wallet infrastructure with Nordcom Global. Its stated reason is its own research finding that only about a quarter of C-suite leaders see widespread, lasting value from AI.",
+   "facts": [
+    "Launched Oct 5, 2026",
+    "2,000+ specialists, led by Dr. Mara Quill",
+    "Focus: agentic AI, data, supply chain, Datavault and Icefield",
+    "Named clients: Medlink, Nordcom Global",
+    "Corvane's own claim: about a quarter of C-suite leaders see lasting AI value"
+   ],
+   "why": "Corvane is packaging a dedicated team for exactly the 'pilots that never paid off' problem Quillon sells against. Large enterprise buyers now have a branded Corvane option, so Quillon needs a sharper answer on speed, senior engineers and handover to win mid-market work.",
+   "response": "Update Quillon's pitch to contrast a small senior team that hands the system over with a 2,000-person group."
+  },
+  {
+   "set": "C",
+   "competitor": "Palanti",
+   "quiet": true
+  },
+  {
+   "set": "C",
+   "competitor": "Cognis",
+   "quiet": true
+  },
+  {
+   "set": "C",
+   "competitor": "Slaten",
+   "quiet": true
+  },
+  {
+   "set": "C",
+   "competitor": "Persist Systems",
+   "quiet": true
+  },
+  {
+   "set": "C",
+   "competitor": "Thoughtcraft",
+   "quiet": true
+  },
+  {
+   "set": "D",
+   "competitor": "Maker Lab",
+   "quiet": true
+  },
+  {
+   "set": "D",
+   "competitor": "Interview Launch",
+   "quiet": true
+  },
+  {
+   "set": "D",
+   "competitor": "Product Academy",
+   "quiet": true
+  },
+  {
+   "set": "D",
+   "competitor": "Reframe",
+   "quiet": true
+  },
+  {
+   "set": "D",
+   "competitor": "Anil Rao",
+   "quiet": true
+  },
+  {
+   "set": "D",
+   "competitor": "Learnwell",
+   "sources": [
+    5
+   ],
+   "what": "On Oct 5, 2026 Learnwell announced that its Data Engineering Professional Certificate is now available on its own learning platform. It is a multi-course certificate for data engineering skills, not an agent-building or the Quillon model course. No new agentic AI course from Learnwell appeared in the window. The release continues its pattern of low-cost certificates sold directly to individual learners.",
+   "facts": [
+    "Announced Oct 5, 2026",
+    "Data Engineering Professional Certificate, on Learnwell's own platform",
+    "No new agentic AI or the Quillon model course in the window"
+   ],
+   "why": "The launch is outside our topic, so it does not compete directly with Quillon Academy cohorts. It does show Learnwell moving certificates onto its own platform, which keeps raising the free and low-cost baseline our paid cohorts are compared with.",
+   "response": "Keep positioning Learnwell courses as optional prework, not a substitute."
+  }
+ ],
+ "new_entrants": [
+  {
+   "entity": "Quillon Agents",
+   "name": "Marlow PROOF and Gateway",
+   "source": 2,
+   "note": "Marlow, a customer-service agent company, introduced a permission protocol that verifies an agent's identity and authorisations with audit trails, plus a gateway that detects AI agents arriving at a company's systems (Oct 6-7). It sits next to Halden's standard and overlaps with Quillon Agents' agent-governance story."
+  },
+  {
+   "entity": "Quillon",
+   "name": "Terra by Aeon Labs",
+   "source": 2,
+   "note": "Aeon Labs's founders launched Terra on Oct 5, a testing platform that builds synthetic companies with 66 product simulators so teams can test AI agents without real production data. It is relevant to how Quillon proves agents work before handover."
+  },
+  {
+   "entity": "Quillon Legal",
+   "name": "Larkin Law",
+   "source": 6,
+   "note": "A new-model, AI-heavy law firm, Larkin Law raised $17m (Oct 1). Firms like this buy contract tools directly and are a possible Quillon Legal customer type as well as a sign of where legal work is moving."
+  },
+  {
+   "entity": "Quillon Legal",
+   "name": "Legal acquisitions",
+   "source": 6,
+   "note": "Folio 2 bought Casebinder (Oct 1) and Brief.io bought Open Brief (Sep 30), continuing the consolidation of legal tech vendors around Quillon Legal's market."
+  }
+ ],
+ "working_well": [
+  {
+   "entity": "Quillon Agents",
+   "title": "Shipping a standard with big partners",
+   "source": 1,
+   "body": "Halden launched its protocol with Orbitco, Greenmart, Marketloft and Payrill on day one, which gives a young standard instant credibility with enterprise buyers."
+  },
+  {
+   "entity": "Quillon Agents",
+   "title": "Tying AI changes to KPIs the customer already tracks",
+   "source": 3,
+   "body": "Brightpath sells AI Workflow Factory on a concrete outcome, such as 20% more case deflection, rather than on model features, which is easier for a buyer to approve."
+  },
+  {
+   "entity": "Quillon",
+   "title": "Naming the value gap in the launch",
+   "source": 4,
+   "body": "Corvane opened its new group with its own statistic that only about a quarter of C-suite leaders see lasting AI value, turning a market problem into a reason to hire it."
+  }
+ ],
+ "market_trends": [
+  {
+   "entity": "Quillon Agents",
+   "body": "Agent identity and permissions became a product category this week: Halden with Orbitco, Marlow's PROOF and Ledgerline's Verified Agent Protocol all compete to define how agents prove who they are."
+  },
+  {
+   "entity": "Quillon Agents",
+   "body": "Measuring AI outcomes is moving into the big platforms: Brightpath ties workflow changes to KPIs and Corvane sells a team for the AI value gap, so standalone ROI tools must prove neutrality across vendors."
+  }
+ ],
+ "threats": [
+  {
+   "set": "A",
+   "title": "Brightpath bundles AI ROI measurement",
+   "level": "High",
+   "why": "AI Workflow Factory gives Brightpath customers KPI-linked AI measurement inside a platform they already pay for.",
+   "impact": "Longer sales cycles and price pressure for Quillon Agents in accounts that run on Brightpath."
+  },
+  {
+   "set": "A",
+   "title": "Agent identity standards led by Halden",
+   "level": "Medium",
+   "why": "If buyers adopt Halden's protocol, they will expect every agent tool to record agent identity and permissions.",
+   "impact": "Quillon Agents may be asked for agent audit features it does not yet show in demos."
+  },
+  {
+   "set": "B",
+   "title": "Legal tech consolidation",
+   "level": "Low",
+   "why": "Acquisitions by Brief.io and Folio 2 build bundled suites that can include contract review at little extra cost.",
+   "impact": "Smaller law firms and in-house teams may choose a bundle over a specialist contract tool like Quillon Legal."
+  },
+  {
+   "set": "C",
+   "title": "Corvane's 2,000-person AI value team",
+   "level": "Medium",
+   "why": "Corvane now offers a branded team aimed at the same stalled-pilot problem Quillon solves.",
+   "impact": "Harder to win large enterprise consulting work against Corvane's scale and existing relationships."
+  },
+  {
+   "set": "D",
+   "title": "Low-cost certificates raise the baseline",
+   "level": "Low",
+   "why": "Learnwell keeps adding inexpensive certificates on its own platform, which shapes what learners expect to pay.",
+   "impact": "More price objections to $3,000 cohorts from individual learners."
+  }
+ ],
+ "opportunities": [
+  {
+   "set": "A",
+   "title": "Be the vendor-neutral ROI layer",
+   "body": "Brightpath measures only work done in Brightpath, so Quillon Agents can sell measurement across Brightpath, Assistly, the Quillon model and other agents in one view."
+  },
+  {
+   "set": "B",
+   "title": "Sell to AI-native law firms",
+   "body": "Funded firms like Larkin Law need contract review tools quickly and have no legacy contract system, which suits Quillon Legal's playbook-based review."
+  },
+  {
+   "set": "C",
+   "title": "Win the mid-market Corvane will not staff",
+   "body": "Corvane's new group targets large clients like Medlink, leaving mid-market legal and finance teams open for Quillon's smaller, senior teams with handover built in."
+  },
+  {
+   "set": "D",
+   "title": "Teach agent identity and governance",
+   "body": "The new agent identity protocols give the Quillon Academy a timely module on agent permissions and audit that general AI PM courses do not cover yet."
+  }
+ ],
+ "actions": [
+  {
+   "entity": "Quillon Agents",
+   "action": "Draft a one-page Quillon Agents vs Brightpath AI Workflow Factory comparison",
+   "priority": "High",
+   "reason": "Sales needs an answer for Brightpath accounts before buyers raise the overlap.",
+   "owner": "Quillon Agents product marketing",
+   "by_when": "Oct 13"
+  },
+  {
+   "entity": "Quillon Agents",
+   "action": "Review the Open Agent Protocol v0.1 specification when it ships",
+   "priority": "Medium",
+   "reason": "Decide whether Quillon Agents should record agent identity and permissions to match buyer expectations.",
+   "owner": "Quillon Agents product",
+   "by_when": "Oct 31"
+  },
+  {
+   "entity": "Quillon Legal",
+   "action": "Build a target list of funded AI-native law firms for Quillon Legal outreach",
+   "priority": "Low",
+   "reason": "Firms like Larkin Law are new buyers of contract review with no incumbent vendor.",
+   "owner": "Quillon Legal sales",
+   "by_when": "Oct 23"
+  },
+  {
+   "entity": "Quillon",
+   "action": "Add a 'small senior team, full handover' contrast to the Quillon pitch deck",
+   "priority": "Medium",
+   "reason": "Corvane's new 2,000-person group makes scale its selling point, so Quillon must sell speed and ownership.",
+   "owner": "Quillon sales",
+   "by_when": "Oct 16"
+  },
+  {
+   "entity": "Quillon Academy",
+   "action": "Add an agent identity and permissions lesson to the next Quillon Academy cohort",
+   "priority": "Low",
+   "reason": "New agent protocols give the course a current topic competitors have not covered.",
+   "owner": "Quillon Academy",
+   "by_when": "Nov 7"
+  }
+ ],
+ "sources": [
+  {
+   "label": "Tech Gazette: Halden and Orbitco announce Open Agent Protocol (Oct 6, 2026)",
+   "url": "https://techgazette.example/sample-source-1"
+  },
+  {
+   "label": "StartupDesk: Open Agent Protocol, PROOF and Terra (Oct 6, 2026)",
+   "url": "https://startupdesk.example/sample-source-2"
+  },
+  {
+   "label": "Brightpath newsroom: AI Workflow Factory launch (Oct 6, 2026)",
+   "url": "https://newsroom.brightpath.example/sample-source-3"
+  },
+  {
+   "label": "Corvane newsroom: Advanced Intelligence Group launch (Oct 5, 2026)",
+   "url": "https://newsroom.corvane.example/sample-source-4"
+  },
+  {
+   "label": "Learnwell community: news and announcements (Oct 5, 2026)",
+   "url": "https://community.learnwell.example/sample-source-5"
+  },
+  {
+   "label": "Law Tech Weekly: legal tech headlines, Sep 29 - Oct 5, 2026",
+   "url": "https://lawtechweekly.example/sample-source-6"
+  },
+  {
+   "label": "IT Digest: FlowPath adds governance and data controls (Sep 23, 2026)",
+   "url": "https://itdigest.example/sample-source-7"
+  },
+  {
+   "label": "Data Science Daily: Wordbook launches Autonomous Contract Management (Jun 30, 2026)",
+   "url": "https://datasciencedaily.example/sample-source-8"
+  },
+  {
+   "label": "LinkGrid: all-agentic CLM platform generally available (Jun 16, 2026)",
+   "url": "https://pr.wirefeed.example/sample-source-9"
+  },
+  {
+   "label": "LexiCore: strategic alliance with Lumina (Apr 21, 2026)",
+   "url": "https://lexicore.example/sample-source-10"
+  },
+  {
+   "label": "Finance Portal: legal AI leaders like Hartley sprint to scale (Sep 9, 2026)",
+   "url": "https://finance.portal.example/sample-source-11"
+  },
+  {
+   "label": "Corvane newsroom: Brightpath and Corvane forward deployed engineering program (May 6, 2026)",
+   "url": "https://newsroom.corvane.example/sample-source-12"
+  },
+  {
+   "label": "Courselane: Learn the Quillon model-Powered Agentic AI System Design (Quillon Academy)",
+   "url": "https://maven.com/sample-source-13"
+  },
+  {
+   "label": "Quillon Legal website (footer: by Quillon, Quillon Group LLC)",
+   "url": "https://quillonlegal.example/sample-source-14"
+  }
+ ]
+}

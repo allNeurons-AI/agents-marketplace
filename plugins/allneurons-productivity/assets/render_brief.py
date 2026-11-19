@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """Daily Brief PDF renderer — implements SKILL.md in this folder.
 
 Usage:  python3 render_brief.py --in brief.json --out Daily_Brief_YYYY-MM-DD.pdf

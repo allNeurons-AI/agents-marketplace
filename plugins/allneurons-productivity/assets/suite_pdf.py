@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """
 suite_pdf.py — the single PDF renderer for every allNeurons Productivity skill.
 

@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """deliver_prepare.py -- the single entry point that turns a payload into upload-ready PDF(s), whatever the size.
 
 The PDF must reach the Drive (SharePoint/OneDrive or Google Drive) and be linked in every Daily Brief and Call Prep run, regardless of size. The upload tool
@@ -655,7 +654,7 @@ def run_with_eval(kind, data, out_dir, name, start_tier="full", ceiling=None, al
         if not ev["hard_fail"]:
             break
         _log("self-evaluation failed (%s): tightening and re-running" % "; ".join(ev["issues"]))
-    res["eval"] = {"passed": ev["passed"], "score": ev["score"], "issues": ev["issues"], "attempts": tries}
+    res["self_check"] = {"passed": ev["passed"], "score": ev["score"], "issues": ev["issues"], "attempts": tries}
     if memory:
         brain.record(kind, res, ev)
     return res

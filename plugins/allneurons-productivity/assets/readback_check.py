@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """Post-upload read-back, as a script so it cannot be skipped or waved through.
 
 After the Drive upload, read the item back (SharePoint/OneDrive: read_resource on the returned resourceUri; Google Drive: read_file_content on the returned file id), save the text it returns to a file, then:

@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """Compose the Call Prep card and audit the briefing link in the *stored* notes ().
 
 The defect: the briefing PDF was rendered and uploaded, but the calendar block's notes did not end up holding a working

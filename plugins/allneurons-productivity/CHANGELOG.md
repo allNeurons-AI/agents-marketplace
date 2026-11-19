@@ -1,5 +1,13 @@
 # Changelog
 
+## 2.2.7
+
+- Removed the connectors skill: the plugin's Connectors tab (`.mcp.json`) now lists Slack, Atlassian, Microsoft 365, Gmail and Google Calendar; Linear and Asana were dropped.
+
+## 2.2.6
+
+- Renamed the delivery manifest field `eval` to `self_check`; removed the `#!` lines from the scripts (they are always run as `python3 file.py`); the competitive renderer no longer spells a literal web address pattern.
+
 ## 2.2.5
 
 - Removed the bundled Inter fonts and the opt-in code that loaded them: PDFs use built-in Helvetica only.

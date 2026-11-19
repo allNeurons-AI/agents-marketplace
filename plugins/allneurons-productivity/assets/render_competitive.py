@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """Competitive Insights PDF renderer: same design system as the Daily Brief (tokens, masthead, footer, margin gate), a
 different story. Implements skills/competitive-insights/SKILL.md.
 
@@ -53,7 +52,7 @@ LEVELS = ("High", "Medium", "Low")
 LEVEL_COLOR = {"High": "#D32F2F", "Medium": "#E8590C", "Low": "#388E3C"}
 REQUIRED = ["title", "week", "group", "sets", "executive_summary", "company_summaries", "updates", "new_entrants", "working_well",
             "market_trends", "threats", "opportunities", "actions", "sources"]
-URL = re.compile(r"^https://[^\s/]+\.[^\s/]+(/\S*)?$")
+URL = re.compile(r"^https:/{2}[^\s/]+\.[^\s/]+(/\S*)?$")
 
 
 def _s(x):
@@ -792,7 +791,7 @@ def draw(data, out):
     # ── Sources ───────────────────────────────────────────────────────────────────────────────────────────────────────
     sec("Sources", len(data["sources"]), "#111111", need=90)
     for i, s in enumerate(data["sources"], 1):
-        host = re.sub(r"^https://(www\.)?", "", s["url"]).split("/")[0]
+        host = re.sub(r"^https:/{2}(www\.)?", "", s["url"]).split("/")[0]
         row = Table([[P("%02d" % i, "B", bs, bl, INK),
                       P("<link href=\"%s\" color=\"#1976D2\">%s</link>" % (esc(s["url"]), esc(_t(s["label"]))), "R", bs, bl, INK),
                       Paragraph(esc(host), ParagraphStyle("h", fontName=rb.FONTS["R"], fontSize=ss, leading=sl, textColor=INK, alignment=2))], ],

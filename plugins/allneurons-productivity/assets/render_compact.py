@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """COMPACT renderer -- tier 3 of the size-fit chain (full -> lite -> compact -> multipart), and the part renderer.
 
 Same payload, same words, the same type sizes as the lite layout (body 9.5 pt, meta 8.5 pt -- never smaller, the design

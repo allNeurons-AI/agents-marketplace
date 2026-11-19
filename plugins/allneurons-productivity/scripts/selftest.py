@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """Static self-test for the plugin. Run from anywhere: python3 scripts/selftest.py
 
 Checks that version numbers agree, required files exist, no skill tells anyone to
@@ -32,12 +31,12 @@ check(bool(m) and m.group(1) == ver, f"CHANGELOG top entry matches plugin.json (
 check(f"v{ver}" in read("README.md") or ver in read("README.md"), "README mentions the current version")
 check("## Install" in read("README.md"), "README documents installation")
 
-skills = ["daily-brief", "call-prep", "follow-ups", "competitive-insights", "onboarding", "connectors"]
+skills = ["daily-brief", "call-prep", "follow-ups", "competitive-insights", "onboarding"]
 for s in skills:
     body = read(f"skills/{s}/SKILL.md")
     check(bool(body), f"{s}/SKILL.md exists")
     check("Anti-patterns (do not)" in body, f"{s} has an anti-patterns section")
-    if s not in ("onboarding", "connectors"):
+    if s not in ("onboarding",):
         check(bool(read(f"skills/{s}/qa-checklist.md")), f"{s}/qa-checklist.md exists")
 
 for rel in ["config.md", "tests/test-prompts.md", "references/data-dictionary.md",
@@ -639,7 +638,7 @@ try:
         with tempfile.TemporaryDirectory() as _o:
             _r = _d2.run_with_eval(_k, _d, _o, "t")
             _p = _r["parts"][0]
-            check(_p["bytes"] <= (22500 if _k == "competitive_insights" else 20000) and _p["pages"] <= _cap and _r["eval"]["passed"] and not _r.get("design_lost"),
+            check(_p["bytes"] <= (22500 if _k == "competitive_insights" else 20000) and _p["pages"] <= _cap and _r["self_check"]["passed"] and not _r.get("design_lost"),
                   "%s: within its byte cap and <= %d pages in the full design, self-evaluation passed (%d B, %d pages, tier %s)" % (_k, _cap, _p["bytes"], _p["pages"], _r["tier"]))
     # run-coverage noise never reaches a PDF
     _d = json.load(open(os.path.join(_root2, "tests", "fixtures", "brief_many_items.json")))

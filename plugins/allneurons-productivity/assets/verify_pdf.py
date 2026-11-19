@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """Gate every file before it is attached or uploaded: it must be this run's real PDF.
 
 Usage:

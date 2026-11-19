@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """Clean and verify Follow-Up drafts (leading whitespace, signature image).
 
 . Drafts came out indented: a blank first paragraph, a stray ``<br>``, ``&nbsp;`` or a space run before the

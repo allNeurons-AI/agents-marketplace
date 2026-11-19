@@ -5,7 +5,7 @@ description: "Schedules the weekday skills: Call Prep 4 AM, Daily Brief 6 AM, Fo
 
 # allNeurons Productivity Onboarding
 
-**Version:** 2.2.5. **Plugin:** allneurons-productivity.
+**Version:** 2.2.7. **Plugin:** allneurons-productivity.
 
 ## What this skill does
 
@@ -54,7 +54,6 @@ Creates the recurring scheduled tasks. **It creates tasks. It does not run any o
 | Skill | Command |
 |---|---|
 | Onboarding — run this first | `/allneurons-productivity:onboarding` |
-| Connectors | `/allneurons-productivity:connectors` |
 | Call Prep | `/allneurons-productivity:call-prep` |
 | Daily Brief | `/allneurons-productivity:daily-brief` |
 | Follow-Ups | `/allneurons-productivity:follow-ups` |
@@ -195,7 +194,7 @@ Never fail silently and never leave the person without a next step. Name the cau
 | **Sending email is blocked** (the admin has removed the send permission on Outlook or Gmail) | "Your admin has blocked sending email, so reports cannot be emailed to you. Ask them to allow the Mail send permission for the connector." | Skills still build the PDF, save it to your Drive and show the link in the chat. Follow-Ups drafts only need draft access and still work. |
 | **Code execution and file creation is off** | "PDFs need Code execution and file creation. Ask your admin to turn it on." | The brief and reports are delivered as text in the chat. |
 | **Drive writes are blocked or fail** | "Saving the PDF to your Drive failed. Ask your admin to allow file creation for the Drive connector." | The summary is shown in the chat with the exact error. |
-| **A required connector is missing** | The Connect card from the connector gate. | Run `/allneurons-productivity:connectors` to see every gap. |
+| **A required connector is missing** | The Connect card from the connector gate. | Connect the missing tool in Claude's Connectors settings, then run onboarding again. |
 
 Say each message once, in plain words, with no internal tool names.
 

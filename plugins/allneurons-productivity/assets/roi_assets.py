@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """Capture the assets a skill call generates, tied to the skill execution that produced them ().
 
 Skills ROI counts what a skill produced. Assets made during a Cowork skill call (the PDF, the saved copy, a rendered

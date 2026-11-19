@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """Parse and validate the Competitive Insights profile (``Skills/Competitive Insights/profile.md``).
 
 The profile is the person's own data, kept in their drive, so nothing about their company or competitors is baked into

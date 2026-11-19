@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """Layout gate: no visible text may sit outside the printable content area.
 
 Why this exists (): a Call Prep briefing shipped with a long company

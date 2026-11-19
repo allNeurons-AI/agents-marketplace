@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """Self-looping PDF compressor: same pages, same text, same layout and colour blocks -- fewer bytes, at the cost of
 invisible precision. Used by deliver_prepare.py before it ever trims content.
 

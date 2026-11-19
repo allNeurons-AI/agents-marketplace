@@ -28,7 +28,7 @@ If one is off, the plugin tells you exactly what to ask your admin and falls bac
 | **Connectors** | Shows which connectors are connected, offers Connect cards for the gaps (Outlook, Gmail, calendars, Drive, Teams, Slack, Jira, CRM) | on demand | A table and Connect cards |
 | **Onboarding** | Schedules the four above in one pass | once | Scheduled tasks |
 
-Current version: 2.2.5
+Current version: 2.2.7
 
 ## Try it: example prompts
 
@@ -37,13 +37,12 @@ Current version: 2.2.5
 3. "Prep me for my calls today" books a private prep block with a fact card before each external call.
 4. "Find my follow-ups" creates reply drafts in your voice and never sends them.
 5. "What are our competitors doing this week?" emails one sourced competitor report.
-6. "Connect my tools" shows which connectors are connected and offers buttons for the rest.
 
 The plugin uses only your own Microsoft or Google account and the connectors you authorise. It has no service of its own, so no test account is needed: use any account with a few meetings and emails.
 
 ## Adding connectors
 
-Connectors are added in Claude's own Connectors settings, not inside the plugin. To make that easy, run `/allneurons-productivity:connectors` (or say "connect my tools"): it shows which of Outlook or Gmail, Outlook or Google Calendar, SharePoint or Google Drive, Teams, Slack, Google Chat, Jira and your CRM are connected, and gives a Connect button for each one that is missing. Mail, Calendar and Drive are required; everything else is optional but adds depth.
+Connectors are added in Claude's own Connectors settings, not inside the plugin. The plugin's Connectors tab lists the tools it can use (Microsoft 365, Gmail, Google Calendar, Slack, Jira and more); connect the ones you have, and onboarding checks the rest.
 
 ## What it runs, sends and fetches
 

@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """Lite renderer -- the same payload as the full Daily Brief / Call Prep, drawn as plain flowing text.
 
 Why it exists (v1.9.3): the Drive upload tools only accepts a file as text the model re-types into the call, and

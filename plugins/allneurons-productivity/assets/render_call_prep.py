@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """Call Prep briefing PDF — same design system as render_brief.py (see 'Call prep PDF.md').
 
 Usage:  python3 render_call_prep.py --in prep.json --out prep.pdf

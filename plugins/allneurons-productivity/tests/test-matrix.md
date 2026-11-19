@@ -23,6 +23,5 @@ Mark each row Pass or Fail with the date and tester. "Cowork" means desktop or w
 | 17 | Any | Skill run directly, no task exists | Daily Brief | Same checks as onboarding, then one schedule offer |
 | 18 | Any | Saturday, scheduled run | Daily Brief | Stops, sends nothing |
 | 19 | Any | Saturday, manual run | Daily Brief | Runs for today |
-| 20 | Any | `/allneurons-productivity:connectors` | Run | Table of roles, cards for gaps, nothing read |
 | 21 | Claude Code | Follow-Ups | Run | Drafts created in thread, none sent |
 | 22 | Any | Competitive Insights, no profile | Run | Profile built, one PDF, one email |

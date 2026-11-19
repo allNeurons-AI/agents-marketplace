@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """Compose and validate the plugin's emails deterministically .
 
 Why this exists. ``outlook_send_mail`` (and some Gmail send tools) default ``bodyType`` to ``"text"``. A run that forgets to pass

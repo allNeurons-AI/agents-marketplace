@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """allNeurons Productivity — PDF renderer with the new design (add-on).
 
 Same command line, exit codes, batch mode, format/accuracy gate, markdown

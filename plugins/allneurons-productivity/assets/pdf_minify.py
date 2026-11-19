@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """Lossless compaction of the (uncompressed, ASCII) PDFs the renderer writes -- same pages, same look, fewer bytes.
 
 Why not Flate + base64 (the usual way to 'compress a PDF')?  The SharePoint upload tool only takes the file as text the

@@ -5,7 +5,7 @@ description: "Weekly competitive intelligence for your whole company group: find
 
 # allNeurons Productivity Competitive Insights
 
-**Version:** 2.2.5. **Plugin:** allneurons-productivity.
+**Version:** 2.2.7. **Plugin:** allneurons-productivity.
 
 ## What this skill does
 
@@ -166,7 +166,7 @@ Before sending, tick `qa-checklist.md` in this folder.
 
 - **The PDF is at most 6 pages and 22,500 bytes, every section present, with only meaningful content.** The report is the deliverable, so its size cap is the largest file that still travels as one typed upload (30,000 base64 characters), not the 20 KB that the Daily Brief and Call Prep use. Before writing the payload run `python3 "${CLAUDE_PLUGIN_ROOT}/assets/brain.py" hints --kind competitive_insights` and follow what it says; write each description in one or two plain sentences and list only items that need action. `deliver_prepare.py` enforces both limits itself and always produces the PDF; do not shorten the design or drop a section by hand. **A quiet competitor is one line (`quiet: true`); do not pad it.** If a week is so large that the limit would cut content, the squeeze loop shortens wording first, then lists, and the manifest records it; the complete text is always in the `.md` backup.
 - **Never put statements about the run itself into the PDF** (what was read, opened, matched, swept or skipped; "Read 3 of 25+ matched chat messages ..."). They are stripped before drawing. If coverage was partial, say it once in the final reply, not in the document.
-- **Do not mention trimming** in the PDF or the email; the manifest records it. The `eval` field of the manifest must show `passed: true` before the upload.
+- **Do not mention trimming** in the PDF or the email; the manifest records it. The `self_check` field of the manifest must show `passed: true` before the upload.
 
 ## The look of the PDF
 

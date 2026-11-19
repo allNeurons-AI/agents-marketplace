@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """Self-evaluation and run memory ("brain") for the three PDF skills. Deterministic, local, no network, no questions.
 
   evaluate(kind, pdf, manifest)   -> {"passed", "score", "issues"}   checks the finished PDF against the hard rules:

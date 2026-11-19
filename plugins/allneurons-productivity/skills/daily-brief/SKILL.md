@@ -5,7 +5,7 @@ description: "Weekday morning briefing: today's calendar, email, chat and open t
 
 # allNeurons Productivity Daily Brief
 
-**Version:** see `plugin.json`. **Plugin:** allneurons-productivity.
+**Version:** 2.2.2. **Plugin:** allneurons-productivity.
 
 ## What this skill does
 

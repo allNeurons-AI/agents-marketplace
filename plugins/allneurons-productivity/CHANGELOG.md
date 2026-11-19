@@ -1,5 +1,13 @@
 # Changelog
 
+## 2.2.2
+
+- Added `.mcp.json` so the Connectors tab lists the remote connectors the skills use (Slack, Atlassian, Linear, Asana, Gmail, Google Calendar); added `privacyPolicyUrl` to `plugin.json`.
+
+## 2.2.1
+
+- Every skill now states the plugin version on its first line (`**Version:** 2.2.1`), kept in step with `plugin.json` on each release.
+
 ## 2.2.0
 
 - Every skill now opens with a standard structure: version, plugin, what it does, jobs to be done, triggers and inputs, orchestration, guardrails, what not to do, and QA.

@@ -5,7 +5,7 @@ description: "Schedules the weekday skills: Call Prep 4 AM, Daily Brief 6 AM, Fo
 
 # allNeurons Productivity Onboarding
 
-**Version:** 2.2.8. **Plugin:** allneurons-productivity.
+**Version:** 2.2.9. **Plugin:** allneurons-productivity.
 
 ## What this skill does
 

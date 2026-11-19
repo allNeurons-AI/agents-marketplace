@@ -5,7 +5,7 @@ description: "Prep for a call, brief me on an account, who am I talking to, prep
 
 # allNeurons Productivity Call Prep
 
-**Version:** 2.2.8. **Plugin:** allneurons-productivity.
+**Version:** 2.2.9. **Plugin:** allneurons-productivity.
 
 ## What this skill does
 

@@ -1,7 +1,7 @@
 {
   "name": "allneurons-productivity",
   "displayName": "allNeurons Productivity",
-  "version": "2.2.8",
+  "version": "2.2.9",
   "description": "Four weekday assistants for any company: Daily Brief (morning PDF), Call Prep (private prep blocks before external calls), Follow-Ups (drafted replies, never sent) and Competitive Insights (weekly PDF). Works with Microsoft 365 or Google Workspace, plus Slack, Teams, Google Chat, Jira, GitHub, Linear, Asana and CRMs. No API keys or tokens.",
   "author": {
     "name": "allNeurons",

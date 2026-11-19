@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.2.9
+
+- The Connectors tab no longer lists Atlassian (Jira still works when you connect it in Claude).
+
 ## 2.2.8
 
 - The competitive renderer checks links with the standard URL parser and no longer builds its own address patterns.

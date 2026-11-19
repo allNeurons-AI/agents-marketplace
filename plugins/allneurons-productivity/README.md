@@ -28,7 +28,7 @@ If one is off, the plugin tells you exactly what to ask your admin and falls bac
 | **Connectors** | Shows which connectors are connected, offers Connect cards for the gaps (Outlook, Gmail, calendars, Drive, Teams, Slack, Jira, CRM) | on demand | A table and Connect cards |
 | **Onboarding** | Schedules the four above in one pass | once | Scheduled tasks |
 
-Current version: 2.2.8
+Current version: 2.2.9
 
 ## Try it: example prompts
 
@@ -42,7 +42,7 @@ The plugin uses only your own Microsoft or Google account and the connectors you
 
 ## Adding connectors
 
-Connectors are added in Claude's own Connectors settings, not inside the plugin. The plugin's Connectors tab lists the tools it can use (Microsoft 365, Gmail, Google Calendar, Slack, Jira and more); connect the ones you have, and onboarding checks the rest.
+Connectors are added in Claude's own Connectors settings, not inside the plugin. The plugin's Connectors tab lists the tools it can use (Microsoft 365, Gmail, Google Calendar, Slack and more); connect the ones you have, and onboarding checks the rest.
 
 ## What it runs, sends and fetches
 

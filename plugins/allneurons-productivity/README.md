@@ -28,7 +28,7 @@ If one is off, the plugin tells you exactly what to ask your admin and falls bac
 | **Connectors** | Shows which connectors are connected, offers Connect cards for the gaps (Outlook, Gmail, calendars, Drive, Teams, Slack, Jira, CRM) | on demand | A table and Connect cards |
 | **Onboarding** | Schedules the four above in one pass | once | Scheduled tasks |
 
-Current version: 2.2.3
+Current version: 2.2.5
 
 ## Try it: example prompts
 

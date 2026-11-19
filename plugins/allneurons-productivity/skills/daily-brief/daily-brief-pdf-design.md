@@ -9,7 +9,7 @@ Clean, black-on-white, easy to read. Big clear type, generous spacing, colour on
 ```css
 page        { size: Letter; margin: 54pt; background: #FFFFFF; }
 content     { width: 504pt; }                 /* one column */
-font-family { Helvetica, sans-serif; } /* built-in Helvetica by default (8-15 KB PDF, uploadable). Inter Display is opt-in via SUITE_PDF_INTER=1 (~55 KB, too large to upload) */
+font-family { Helvetica, sans-serif; } /* built-in Helvetica by default (8-15 KB PDF, uploadable). */
 ```
 
 ## Colours

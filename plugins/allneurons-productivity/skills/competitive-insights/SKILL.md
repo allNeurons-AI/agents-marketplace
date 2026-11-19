@@ -5,7 +5,7 @@ description: "Weekly competitive intelligence for your whole company group: find
 
 # allNeurons Productivity Competitive Insights
 
-**Version:** 2.2.3. **Plugin:** allneurons-productivity.
+**Version:** 2.2.5. **Plugin:** allneurons-productivity.
 
 ## What this skill does
 

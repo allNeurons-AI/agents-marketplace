@@ -332,7 +332,7 @@ check("every single email or chat reply this plugin produces, with no exception"
 # v1.9.1 -- PDFs must stay small enough to upload by pasting contentBase64.
 import subprocess, tempfile, base64 as _b64
 rb_src = read("assets/render_brief.py")
-check('os.environ.get("SUITE_PDF_INTER", "") == "1"' in rb_src, "renderer defaults to built-in Helvetica; Inter is opt-in")
+check("TTFont" not in rb_src and "Helvetica" in rb_src, "renderer uses built-in Helvetica only")
 vp = read("assets/verify_pdf.py")
 check("safe_to_paste" in vp and "paste_mode" in vp and "ascii_only" in vp, "verify_pdf.py reports safe_to_paste / paste_mode / ascii_only")
 check("The PDF delivery flow" in rp and "contentBase64" in rp, "run-policy.md has the single PDF delivery flow")
@@ -343,7 +343,7 @@ try:
     _j = os.path.join(_d, "b.json"); _p = os.path.join(_d, "b.pdf")
     json.dump({"title":"Daily Brief","headline":"x","stats":{"Conflicts":0,"Due today & overdue":0,"Needs attention":0,"Resolved":0},
                "meetings":[],"conflicts":[],"due_today":[],"worth_double_checking":[],"needs_attention":[],"resolved":[],"sources":[]}, open(_j,"w"))
-    _env = {k:v for k,v in os.environ.items() if k != "SUITE_PDF_INTER"}
+    _env = dict(os.environ)
     subprocess.run([sys.executable, os.path.join(ROOT,"assets","suite_pdf_design.py"),"--kind","daily_brief","--in",_j,"--out",_p], env=_env, check=True, capture_output=True)
     _n = os.path.getsize(_p)
     _raw = open(_p, "rb").read()

@@ -13,7 +13,6 @@ Checked by searching the plugin source. Sign below when reviewed.
 | Sends to nobody else | Pass | `email_compose.py` rejects any message without exactly one recipient, the signed-in user. |
 | Data minimisation | Pass | Files saved only to the user's own Drive. Local state is a PDF-fit file and a run ledger on the user's machine, never uploaded. |
 | Permission changes | Note | Onboarding tells the user to set the scheduled tasks to Automatically approve. It cannot do this itself, says so, and the README explains why. The user chooses. |
-| Bundled fonts | Note | Five Inter Display `.ttf` files are bundled and referenced by `render_brief.py` (off by default). Expect this to be held for reviewer approval. |
 | Test account | Not applicable | The plugin has no service of its own. |
 
 Reviewed by: ______________________  Date: ____________

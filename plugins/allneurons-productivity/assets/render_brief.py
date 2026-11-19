@@ -21,7 +21,6 @@ from reportlab.lib.colors import HexColor, white
 from reportlab.lib.styles import ParagraphStyle
 from reportlab.lib.enums import TA_LEFT
 from reportlab.pdfbase import pdfmetrics
-from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.platypus import (BaseDocTemplate, PageTemplate, Frame, Paragraph,
                                 Spacer, Flowable, KeepTogether, CondPageBreak)
 from reportlab.pdfgen import canvas as rl_canvas
@@ -49,21 +48,9 @@ CONTENT_W = PAGE_W - 2 * MARGIN   # 504pt
 FRAME_H = PAGE_H - 2 * MARGIN
 S = {1: 4, 2: 8, 3: 12, 4: 16, 5: 24, 6: 32, 7: 48}   # spacing scale
 
-# ── Fonts (SKILL.md §4) ────────────────────────────────────────────────────
-_HERE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "fonts")  # assets/fonts in the plugin
-FONT_DIR = _HERE if os.path.isdir(_HERE) else os.path.expanduser("~/Library/Fonts")
+# ── Fonts (SKILL.md §4): built-in Helvetica only, so PDFs stay small (~8-15 KB) and uploadable ────────────
 FONTS = {"R": "Helvetica", "M": "Helvetica", "SB": "Helvetica-Bold",
          "B": "Helvetica-Bold", "I": "Helvetica-Oblique"}
-_want = {"R": "InterDisplay-Regular", "M": "InterDisplay-Medium", "SB": "InterDisplay-SemiBold",
-         "B": "InterDisplay-Bold", "I": "InterDisplay-Italic"}
-# DEFAULT IS NOW BUILT-IN HELVETICA (~8-15 KB PDFs). Embedding Inter made every PDF ~55 KB, i.e. ~72,000 base64
-# characters, which is too big to read back in one tool result and to pass as the `contentBase64` argument of the
-# Drive upload tools -- so uploads silently stopped happening (v1.9.1 fix). Inter is opt-in: SUITE_PDF_INTER=1.
-USE_INTER = os.environ.get("SUITE_PDF_INTER", "") == "1" and "--no-inter" not in sys.argv
-if USE_INTER and all(os.path.exists(os.path.join(FONT_DIR, f + ".ttf")) for f in _want.values()):
-    for k, f in _want.items():
-        pdfmetrics.registerFont(TTFont(f, os.path.join(FONT_DIR, f + ".ttf")))
-        FONTS[k] = f
 
 
 def make_ascii(path):
@@ -692,7 +679,7 @@ if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     ap.add_argument("--in", dest="inp", required=True)
     ap.add_argument("--out", required=True)
-    ap.add_argument("--no-inter", action="store_true", help="deprecated no-op: built-in Helvetica is the default; set SUITE_PDF_INTER=1 to embed Inter (~55 KB, not uploadable)")
+    ap.add_argument("--no-inter", action="store_true", help="deprecated no-op: built-in Helvetica is always used")
     a = ap.parse_args()
     try:
         data = json.load(open(a.inp))

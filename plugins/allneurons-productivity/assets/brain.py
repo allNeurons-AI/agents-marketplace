@@ -18,7 +18,7 @@ only ever makes runs faster and tighter, it never blocks one.
 CLI:  python3 brain.py hints --kind daily_brief | show | reset
 """
 import json
-import os
+import os, tempfile
 import re
 import sys
 
@@ -28,7 +28,7 @@ DEFAULT_CAPS = {"daily_brief": 4, "call_prep": 2, "competitive_insights": 6}
 
 
 def _path():
-    return os.path.join(os.environ.get("SUITE_BRAIN_DIR") or os.path.join(os.path.expanduser("~"), ".allneurons-productivity-brain"), "brain.json")
+    return os.path.join(os.environ.get("SUITE_BRAIN_DIR") or os.path.join(tempfile.gettempdir(), "allneurons-productivity-brain"), "brain.json")
 
 
 def load():

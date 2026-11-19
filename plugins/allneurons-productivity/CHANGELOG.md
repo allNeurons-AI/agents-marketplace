@@ -1,5 +1,14 @@
 # Changelog
 
+## 2.2.5
+
+- Removed the bundled Inter fonts and the opt-in code that loaded them: PDFs use built-in Helvetica only.
+- The run memory now defaults to the system temp folder instead of the home folder.
+
+## 2.2.4
+
+- Removed compiled `__pycache__` files that had been committed by mistake, added `.gitignore`, and dropped `privacyPolicyUrl` from `plugin.json` (the README links the privacy policy).
+
 ## 2.2.3
 
 - Removed the literal pip install command from the docs and error messages; the pinned versions are named instead.

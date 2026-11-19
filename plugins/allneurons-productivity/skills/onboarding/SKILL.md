@@ -5,7 +5,7 @@ description: "Schedules the weekday skills: Call Prep 4 AM, Daily Brief 6 AM, Fo
 
 # allNeurons Productivity Onboarding
 
-**Version:** 2.2.2. **Plugin:** allneurons-productivity.
+**Version:** 2.2.3. **Plugin:** allneurons-productivity.
 
 ## What this skill does
 
@@ -315,7 +315,7 @@ Each of these makes the output materially better. **None of them blocks anything
 | **`reportlab`** | **No PDF at all.** Daily Brief and Call Prep fall back to content inline in the email body — still delivered, just not as a document. |
 | **`pypdf`** | PDFs still render; the renderer falls back to a weaker self-check. Worth fixing, not urgent. |
 
-Install line: `pip install --break-system-packages reportlab==5.0.1 pypdf==6.17.0 pypdfium2==5.13.0` (`pypdfium2` is optional — it adds the near-empty-page check).
+Required Python libraries, pinned: reportlab 5.0.1, pypdf 6.17.0 and pypdfium2 5.13.0, installed with pip (see https://pip.pypa.io/en/stable/cli/pip_install/) (`pypdfium2` is optional — it adds the near-empty-page check).
 
 ### Timezone — resolved, never asked
 

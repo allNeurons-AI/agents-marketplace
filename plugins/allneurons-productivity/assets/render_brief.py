@@ -14,7 +14,7 @@ from datetime import datetime, date
 try:
     import reportlab  # noqa: F401
 except ImportError:
-    print("DEPENDENCY ERROR: reportlab is not installed. Run: pip install --break-system-packages reportlab==5.0.1", file=sys.stderr)
+    print("DEPENDENCY ERROR: reportlab is not installed. Install reportlab 5.0.1 with pip", file=sys.stderr)
     sys.exit(3)
 from reportlab.lib.pagesizes import letter
 from reportlab.lib.colors import HexColor, white

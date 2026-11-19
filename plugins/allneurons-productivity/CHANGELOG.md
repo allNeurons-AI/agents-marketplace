@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.2.3
+
+- Removed the literal pip install command from the docs and error messages; the pinned versions are named instead.
+
 ## 2.2.2
 
 - Added `.mcp.json` so the Connectors tab lists the remote connectors the skills use (Slack, Atlassian, Linear, Asana, Gmail, Google Calendar); added `privacyPolicyUrl` to `plugin.json`.

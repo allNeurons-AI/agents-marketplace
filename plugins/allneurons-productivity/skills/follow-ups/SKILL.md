@@ -5,7 +5,7 @@ description: "Find who I need to follow up with, who has gone silent, and what I
 
 # allNeurons Productivity Follow-Ups
 
-**Version:** 2.2.2. **Plugin:** allneurons-productivity.
+**Version:** 2.2.3. **Plugin:** allneurons-productivity.
 
 ## What this skill does
 

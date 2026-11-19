@@ -5,7 +5,7 @@ description: "Shows which connectors are connected (Outlook or Gmail, Outlook or
 
 # allNeurons Productivity Connectors
 
-**Version:** 2.2.2. **Invoke as `/allneurons-productivity:connectors`**, or say "connect my tools".
+**Version:** 2.2.3. **Invoke as `/allneurons-productivity:connectors`**, or say "connect my tools".
 
 ## What this skill does
 

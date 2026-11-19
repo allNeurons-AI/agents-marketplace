@@ -99,8 +99,8 @@ try:
 except ImportError:  # pragma: no cover - dependency preflight
     sys.stderr.write(
         "DEPENDENCY ERROR: reportlab is not installed, so no PDF can be "
-        "rendered.\n  Install it with:  pip install --break-system-packages "
-        "reportlab==5.0.1 pypdf==6.17.0 pypdfium2==5.13.0\n"
+        "rendered.\n  Install these pinned versions with pip:  "
+        "reportlab 5.0.1, pypdf 6.17.0, pypdfium2 5.13.0\n"
         "    reportlab   required — renders the PDF\n"
         "    pypdf       required — counts pages and decodes streams for "
         "verification\n"

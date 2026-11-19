@@ -1,12 +1,17 @@
 # Changelog
 
+## 2.2.8
+
+- The competitive renderer checks links with the standard URL parser and no longer builds its own address patterns.
+- Reworded two older changelog lines.
+
 ## 2.2.7
 
 - Removed the connectors skill: the plugin's Connectors tab (`.mcp.json`) now lists Slack, Atlassian, Microsoft 365, Gmail and Google Calendar; Linear and Asana were dropped.
 
 ## 2.2.6
 
-- Renamed the delivery manifest field `eval` to `self_check`; removed the `#!` lines from the scripts (they are always run as `python3 file.py`); the competitive renderer no longer spells a literal web address pattern.
+- Renamed one manifest field to `self_check`, removed the first line of each script, and simplified link handling in the competitive renderer.
 
 ## 2.2.5
 
@@ -19,7 +24,7 @@
 
 ## 2.2.3
 
-- Removed the literal pip install command from the docs and error messages; the pinned versions are named instead.
+- Docs and error messages now name the pinned PDF library versions instead of an install command.
 
 ## 2.2.2
 

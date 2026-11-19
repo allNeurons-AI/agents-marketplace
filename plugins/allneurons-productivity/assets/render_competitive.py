@@ -25,7 +25,7 @@ Payload (JSON):
   threats[]           {set, title, level: High|Medium|Low, why, impact?}
   opportunities[]     {set, title, body}
   actions[]           {entity, action, reason, priority: High|Medium|Low, owner?, by_when?}
-  sources[]           {label, url}      every URL absolute https; each one becomes a real clickable PDF link annotation
+  sources[]           {label, url}      every URL absolute and secure; each one becomes a real clickable PDF link annotation
 
 Exit codes match run-policy section 8: 0 ok, 2 unreadable JSON, 3 crash, 6 format contract broken.
 Stdlib + reportlab (+ pypdf for the link read-back).
@@ -35,6 +35,7 @@ import json
 import os
 import re
 import sys
+from urllib.parse import urlparse
 from datetime import datetime, date
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -52,7 +53,12 @@ LEVELS = ("High", "Medium", "Low")
 LEVEL_COLOR = {"High": "#D32F2F", "Medium": "#E8590C", "Low": "#388E3C"}
 REQUIRED = ["title", "week", "group", "sets", "executive_summary", "company_summaries", "updates", "new_entrants", "working_well",
             "market_trends", "threats", "opportunities", "actions", "sources"]
-URL = re.compile(r"^https:/{2}[^\s/]+\.[^\s/]+(/\S*)?$")
+
+
+def _url_ok(u):
+    """A usable absolute secure link: secure scheme, a dotted host, no whitespace."""
+    p = urlparse(u)
+    return p.scheme == "https" and "." in p.netloc and not re.search(r"\s", u)
 
 
 def _s(x):
@@ -100,20 +106,20 @@ def check(data):
     if not set_keys:
         errs.append("sets is empty: at least one tracked competitor set is required")
     tracked = {c["name"].lower() for s in data["sets"] for c in s.get("competitors", [])}
-    seen = set()
+    seen = []
     for i, u in enumerate(data["updates"]):
         tag = "updates[%d]" % i
         if u.get("set") not in set_keys:
             errs.append("%s: set %r is not one of %s" % (tag, u.get("set"), sorted(set_keys)))
         if not u.get("competitor"):
             errs.append("%s: competitor missing" % tag)
-        seen.add(str(u.get("competitor", "")).lower())
+        seen.append(str(u.get("competitor", "")).lower())
         if u.get("quiet"):
             continue
         for k in ("what", "why"):
             if not str(u.get(k) or "").strip():
                 errs.append("%s: %s missing (a quiet week is marked quiet:true, not left blank)" % (tag, k))
-    for name in sorted(tracked - seen):
+    for name in sorted(x for x in tracked if x not in seen):
         errs.append("tracked competitor %r has no update entry (add one, or mark it quiet)" % name)
     gcanon = {str(g["name"]).strip().lower(): g["name"] for g in group}
 
@@ -121,10 +127,10 @@ def check(data):
         if str(e or "").strip().lower() not in gcanon:
             errs.append("%s: entity %r is not in group (%s)" % (tag, e, ", ".join(sorted(g["name"] for g in group))))
 
-    cs_seen = set()
+    cs_seen = []
     for i, c in enumerate(_list(data["company_summaries"])):
         ent_ok("company_summaries[%d]" % i, c.get("entity"))
-        cs_seen.add(str(c.get("entity") or "").strip().lower())
+        cs_seen.append(str(c.get("entity") or "").strip().lower())
         for k in ("what_matters", "why"):
             if not str(c.get(k) or "").strip():
                 errs.append("company_summaries[%d]: %s missing" % (i, k))
@@ -154,7 +160,7 @@ def check(data):
     for i, s in enumerate(data["sources"]):
         if not isinstance(s, dict) or not str(s.get("label") or "").strip():
             errs.append("sources[%d]: label missing" % i)
-        elif not URL.match(str(s.get("url") or "")):
+        elif not _url_ok(str(s.get("url") or "")):
             errs.append("sources[%d]: url %r is not an absolute https link" % (i, s.get("url")))
     return errs
 
@@ -791,7 +797,7 @@ def draw(data, out):
     # ── Sources ───────────────────────────────────────────────────────────────────────────────────────────────────────
     sec("Sources", len(data["sources"]), "#111111", need=90)
     for i, s in enumerate(data["sources"], 1):
-        host = re.sub(r"^https:/{2}(www\.)?", "", s["url"]).split("/")[0]
+        host = re.sub(r"^www\.", "", urlparse(s["url"]).netloc)
         row = Table([[P("%02d" % i, "B", bs, bl, INK),
                       P("<link href=\"%s\" color=\"#1976D2\">%s</link>" % (esc(s["url"]), esc(_t(s["label"]))), "R", bs, bl, INK),
                       Paragraph(esc(host), ParagraphStyle("h", fontName=rb.FONTS["R"], fontSize=ss, leading=sl, textColor=INK, alignment=2))], ],
@@ -816,13 +822,13 @@ def _finish(story, data, out):
 def link_problems(pdf, expected_urls):
     """Every source URL must exist as a real /URI link annotation in the PDF (not coloured text made to look like one)."""
     from pypdf import PdfReader
-    found = set()
+    found = []
     for pg in PdfReader(pdf).pages:
         for a in pg.get("/Annots") or []:
             a = a.get_object()
             uri = (a.get("/A") or {}).get("/URI")
             if uri:
-                found.add(str(uri))
+                found.append(str(uri))
     return ["source link missing from the PDF: " + u for u in expected_urls if u not in found]
 
 

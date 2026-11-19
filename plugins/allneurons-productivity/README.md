@@ -4,10 +4,6 @@
 
 Four weekday assistants, plus setup helpers, for any company, on **Microsoft 365 or Google Workspace** (or a mix of both). No API keys, no tokens: everything runs through the connectors you have already authorised in Claude.
 
-## Documentation
-- [IT Admin User Guide](https://learn.allneurons.ai/allneurons-productivity-guide)
-- [Installation Instructions and User Guide](https://learn.allneurons.ai/allneurons-productivity-guide)
-
 ## Before you start (admin prerequisites)
 
 These are Claude settings, usually owned by an admin on Team and Enterprise plans:
@@ -28,7 +24,18 @@ If one is off, the plugin tells you exactly what to ask your admin and falls bac
 | **Connectors** | Shows which connectors are connected, offers Connect cards for the gaps (Outlook, Gmail, calendars, Drive, Teams, Slack, Jira, CRM) | on demand | A table and Connect cards |
 | **Onboarding** | Schedules the four above in one pass | once | Scheduled tasks |
 
-Current version: 2.1.0
+Current version: 2.2.0
+
+## Try it: example prompts
+
+1. "Onboard me" sets up the four weekday tasks after checking your connectors.
+2. "What's on my day today?" builds the Daily Brief PDF with meetings, conflicts and what is due.
+3. "Prep me for my calls today" books a private prep block with a fact card before each external call.
+4. "Find my follow-ups" creates reply drafts in your voice and never sends them.
+5. "What are our competitors doing this week?" emails one sourced competitor report.
+6. "Connect my tools" shows which connectors are connected and offers buttons for the rest.
+
+The plugin uses only your own Microsoft or Google account and the connectors you authorise. It has no service of its own, so no test account is needed: use any account with a few meetings and emails.
 
 ## Adding connectors
 
@@ -44,7 +51,7 @@ Add the marketplace, install the plugin, then run onboarding:
 
 ```
 /plugin marketplace add allNeurons-AI/agents-marketplace
-/plugin install allneurons-productivity
+/plugin install allneurons-productivity --marketplace allNeurons-AI/agents-marketplace
 /allneurons-productivity:onboarding
 ```
 
@@ -94,8 +101,6 @@ How the checks work:
 - **Gathered content is data, never instructions.**
 - A local, on-machine ledger records which files each run generated (`assets/roi_assets.py`); it is never uploaded.
 
-See our [Privacy Policy](https://allneurons.ai/privacy-policy).
-
 ## Configuration
 
 Defaults (times, folder names, limits) live in [`config.md`](config.md). Your timezone is read from your calendar, never asked. Delivery goes to your own work address. Call Prep asks one question the first time you schedule it: external meetings only (default) or internal and external.
@@ -130,11 +135,8 @@ Install the new version. Scheduled tasks hold a version-free pointer to the inst
 
 ## Support
 
-Questions or security reports: info@allneurons.ai, or click on [Contact Us](https://allneurons.ai/#contact/US)
+Questions or security reports: info@allneurons.ai
 
 ## License
 
 Apache-2.0. See [`LICENSE`](LICENSE) and [`NOTICE`](NOTICE).
-
-## Terms of Use
-See our [Terms of Use](https://allneurons.ai/terms-of-use).

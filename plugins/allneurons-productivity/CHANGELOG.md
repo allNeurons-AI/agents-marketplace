@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.2.0
+
+- Every skill now opens with a standard structure: version, plugin, what it does, jobs to be done, triggers and inputs, orchestration, guardrails, what not to do, and QA.
+- A skill run directly makes the same checks as onboarding, then offers to schedule itself (run policy section 10).
+- Added example prompts, a plugin icon, the marketplace install line, `RELEASING.md`, `POLICY-SELF-REVIEW.md` and `tests/test-matrix.md`.
+- The run ledger no longer reads Claude session variables from the environment.
+
 ## 2.1.0
 
 - Renamed to `allneurons-productivity` (display name "allNeurons Productivity", publisher allNeurons); manifests now carry homepage, repository and author.

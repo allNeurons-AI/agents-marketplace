@@ -382,6 +382,10 @@ A person who installs the plugin and types `/daily-brief` without ever running o
 
 **Everything here is about the one skill actually invoked.** Check its task, offer its schedule, schedule it alone. Someone who ran Daily Brief asked about Daily Brief; signing them up for two more skills they have not tried is presumptuous, and it buries the yes/no they actually care about.
 
+### Same checks as onboarding
+
+A skill run directly gets the same checks onboarding makes, so nobody is better off for having used onboarding first: the connector gate (§13) and the Python package check (`reportlab`, `pypdf`) always run, the timezone is read from the calendar and never asked, Call Prep asks its one scope question the first time, and the schedule offer below follows. If the person says yes, hand off to onboarding in single-skill mode, which finishes with the reminder to set Permissions to Automatically approve. If scheduling is unavailable, use the plain messages from onboarding's *When a feature is not available* and carry on with the on-demand run.
+
 ### The check
 
 **One `list_scheduled_tasks` call — step 4 of the fixed order in §1**, after the connector gate has **passed** and before any gathering.

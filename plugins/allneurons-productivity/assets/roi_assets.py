@@ -13,8 +13,7 @@ Manifest line (JSONL, ``roi-assets.jsonl``):
   * skill       one of SKILLS, given by the caller or inferred from the file name; an asset whose skill cannot be
                 established is recorded as "unassigned" (visible, never silently dropped or guessed).
   * run_id      one id per skill execution (callers pass the same id to every record of the run)
-  * session_id  the Cowork/Claude session, read from the environment (SUITE_SESSION_ID, CLAUDE_CODE_SESSION_ID,
-                CLAUDE_SESSION_ID, in that order) when not passed
+  * session_id  the session, read from SUITE_SESSION_ID in the environment
   * link        the verified drive link when the asset was uploaded, else null
 
 Stdlib only.
@@ -42,7 +41,7 @@ SCRATCH = ("__pycache__", ".tmp", "~$")
 
 
 def session_id(env=os.environ):
-    for k in ("SUITE_SESSION_ID", "CLAUDE_CODE_SESSION_ID", "CLAUDE_SESSION_ID"):
+    for k in ("SUITE_SESSION_ID",):
         if env.get(k):
             return env[k]
     return ""

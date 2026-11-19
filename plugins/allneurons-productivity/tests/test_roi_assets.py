@@ -17,7 +17,7 @@ class Assets(unittest.TestCase):
 
     def test_record_ties_asset_to_skill_run_and_session(self):
         r = ra.record(self.m, self.f("Daily_Brief_2026-10-06.pdf", b"%PDF-1"), run_id="R1", link="https://x.co/a.pdf",
-                      env={"CLAUDE_CODE_SESSION_ID": "sess-9"})
+                      env={"SUITE_SESSION_ID": "sess-9"})
         self.assertEqual((r["skill"], r["run_id"], r["session_id"], r["kind"], r["link"]), ("daily-brief", "R1", "sess-9", "pdf", "https://x.co/a.pdf"))
         self.assertEqual(len(r["sha256"]), 64)
 

@@ -5,6 +5,37 @@ description: "Schedules the weekday skills: Call Prep 4 AM, Daily Brief 6 AM, Fo
 
 # allNeurons Productivity Onboarding
 
+**Version:** see `plugin.json`. **Plugin:** allneurons-productivity.
+
+## What this skill does
+
+Creates the recurring weekday tasks (Call Prep 4 AM, Daily Brief 6 AM, Follow-Ups 4 PM, Competitive Insights Monday 7 AM) after checking connectors, and explains what to ask an admin when a feature is blocked.
+
+## Jobs to be done
+
+- Set everything up in one pass.
+- Make blocked features clear instead of silently failing.
+
+## Triggers and inputs
+
+Triggers: "onboard me", "set up my productivity skills", or after a plugin update. Inputs: the session's scheduling tool, connector status, timezone from the calendar, and the one Call Prep scope choice.
+
+## Orchestration
+
+Connector gate, Tier 0 scheduling check, Tier 1 connector roles, Tier 2 packages and recommended connectors, timezone, reconcile existing tasks, create or update the tasks, then print the final table and the permissions note.
+
+## Guardrails
+
+Creates tasks only; it never runs the other skills or reads data. It never touches tasks it does not own. It cannot change Permissions and never claims to.
+
+## What not to do
+
+Do not prompt for days or times, schedule weekends, write a version into a task prompt, or ask which provider the user has.
+
+## QA
+
+Final output is the table plus the permissions note and nothing else; every task in scope is created or reconciled.
+
 Creates the recurring scheduled tasks. **It creates tasks. It does not run any of the four skills, read any data, or produce any brief, report or plan.** Finish in under a minute of actual work — a card waiting on a human does not count against that, and never rush a blocker decision to beat a clock. Budget ~12 tool calls in single-skill mode and **up to ~20 in full mode** — the Step 3 preflight batch, three creates, and as many as ten legacy deletes. The ceiling is there to stop exploration, never to skip a delete.
 
 **Two modes:**
